@@ -1,13 +1,13 @@
 ## 目录结构
 
 ```
-├───Injector                     	         # 依赖注入的核心代码          
-├───service						             # 使用实例      
+├───Injector    # 依赖注入的核心代码          
+├───service		# 使用实例      
 ```
 
 ### 装饰器注解
 
-[^@Injectable()]: 此装饰器用于标识此类为一个可以注入的服务；列子：
+#####  @Injectable() ：此装饰器用于标识此类为一个可以注入的服务；列子：
 
 ```js
 export class HttpService{
@@ -31,7 +31,7 @@ export class HttpService{
 }
 ```
 
-[^@Inject]: 此装饰器用于标识使用此装饰器的变量 为一个注入到当前类的服务可以直接使用他的实例
+##### @Inject 此装饰器用于标识使用此装饰器的变量 为一个注入到当前类的服务可以直接使用他的实例
 
 ```ts
 import {Inject} from "./Injector/Inject";
